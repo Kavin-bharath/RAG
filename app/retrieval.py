@@ -1,4 +1,8 @@
+from dataclasses import dataclass
+from functools import lru_cache
+
 from groq import Groq
+from sentence_transformers import CrossEncoder
 
 from app.config import GROQ_API_KEY, GROQ_MODEL, TOP_K
 from app.embeddings import embed_query
@@ -12,14 +16,47 @@ SYSTEM_PROMPT = (
     "Never use outside knowledge and never guess."
 )
 
+# Retrieval change (Week 4 Task Set D): dense retrieval alone was ranking the
+# correct chunk outside the top-3 in every observed failure, while it was
+# still present somewhere in the wider dense candidate pool. A cross-encoder
+# reranker jointly scores (query, chunk) pairs and reorders that pool, which
+# fixes ranking mistakes without needing a second (lexical) retrieval path.
+RERANK_CANDIDATE_POOL = 25
+RERANKER_MODEL_NAME = "cross-encoder/ms-marco-MiniLM-L-6-v2"
+
 _groq_client = Groq(api_key=GROQ_API_KEY)
+
+
+@dataclass
+class RankedMatch:
+    id: str
+    score: float
+    metadata: dict
+
+
+@lru_cache(maxsize=1)
+def get_reranker() -> CrossEncoder:
+    return CrossEncoder(RERANKER_MODEL_NAME)
 
 
 def search(query: str, top_k: int = TOP_K):
     vector = embed_query(query)
     index = get_index()
-    response = index.query(vector=vector, top_k=top_k, include_metadata=True)
-    return response.matches
+    response = index.query(vector=vector, top_k=RERANK_CANDIDATE_POOL, include_metadata=True)
+    candidates = response.matches
+    if not candidates:
+        return []
+
+    reranker = get_reranker()
+    pairs = [(query, (c.metadata or {}).get("text", "")) for c in candidates]
+    rerank_scores = reranker.predict(pairs)
+
+    reranked = sorted(zip(candidates, rerank_scores), key=lambda pair: pair[1], reverse=True)
+
+    return [
+        RankedMatch(id=c.id, score=float(score), metadata=c.metadata)
+        for c, score in reranked[:top_k]
+    ]
 
 
 def build_context(matches) -> str:
