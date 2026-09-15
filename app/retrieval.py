@@ -67,7 +67,7 @@ def build_context(matches) -> str:
     return "\n\n---\n\n".join(parts)
 
 
-def answer_query(query: str) -> dict:
+def answer_query(query: str, write_trace: bool = False) -> dict:
     matches = search(query)
     context = build_context(matches)
 
@@ -89,5 +89,19 @@ def answer_query(query: str) -> dict:
             if m.metadata and m.metadata.get("source")
         }
     )
+
+    # Optionally write trace for error analysis
+    if write_trace:
+        from app.tracing import write_trace as write_trace_fn
+        retrieved_chunks = [
+            {
+                "id": m.id,
+                "score": m.score,
+                "source": m.metadata.get("source") if m.metadata else None,
+                "text": m.metadata.get("text")[:100] if m.metadata else None,  # First 100 chars
+            }
+            for m in matches
+        ]
+        write_trace_fn(query, retrieved_chunks, answer, sources)
 
     return {"answer": answer, "sources": sources}

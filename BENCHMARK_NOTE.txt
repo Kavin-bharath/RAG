@@ -1,0 +1,8 @@
+Why Public Benchmarks Would Not Detect These Modes
+====================================================
+
+1. **Ambiguous query wording is filtered by benchmark design.** Public LLM benchmarks (like those used for insurance QA) use curated, well-formed questions with explicit parameters: "Under Form HO-0304, Edition 03-24, does exclusion E-17 cover...?" Real adjusters write "Coverage A limit?" without specifying the edition. A public benchmark would never include the sloppy query form that exposes this mode; it measures only the clean cases where disambiguation is unnecessary.
+
+2. **Benchmark metrics do not track retrieval ranking, only answer correctness.** Public evaluations ask: "Is the final answer correct?" They do not ask: "Did the top-3 retrieved chunks include the source, or did the model synthesize the right answer from lower-ranked chunks?" In this sample, 2 traces had correct answers despite non-top-3 source chunks. A benchmark would score both as 100% correct; the retrieval inefficiency is invisible.
+
+3. **Benchmark test sets assume well-separated policies; my corpus has overlapping variants.** The public insurance QA tasks test against a single policy version or a curated set of dissimilar policies. My corpus has three editions of the same form (HO-0304 01-22, 02-23, 03-24) with nearly identical exclusion wording except for subtle carve-outs and endorsement changes. A benchmark designed for "one policy per question" never sees the edition-ambiguity problem that arises when the same query could apply to multiple overlapping policies.
