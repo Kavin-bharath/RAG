@@ -1,0 +1,428 @@
+{
+  "hit_rate_at_3": 0.6666666666666666,
+  "hits": 8,
+  "total": 12,
+  "p50_latency_ms": 880.54,
+  "results": [
+    {
+      "id": 1,
+      "question": "Under HO-0304 edition 01-22, does exclusion E-17 exclude water backup caused by heavy rainfall or a blocked municipal sewer line?",
+      "expected_chunk_id": "HO-0304_ed-01-22.pdf-a42439a2-9",
+      "hard_token": true,
+      "hit_at_3": false,
+      "retrieved_top5": [
+        {
+          "chunk_id": "HO-0304_ed-01-22.pdf-5f006af0-10",
+          "score": 6.1202802658081055,
+          "source": "HO-0304_ed-01-22.pdf"
+        },
+        {
+          "chunk_id": "Endorsement_HO-2306.pdf-e3b74437-0",
+          "score": 5.236660003662109,
+          "source": "Endorsement_HO-2306.pdf"
+        },
+        {
+          "chunk_id": "Endorsement_HO-2306.pdf-13c1f3ee-2",
+          "score": 4.209372520446777,
+          "source": "Endorsement_HO-2306.pdf"
+        },
+        {
+          "chunk_id": "Endorsement_HO-2405.pdf-a9e6adde-3",
+          "score": 3.5985631942749023,
+          "source": "Endorsement_HO-2405.pdf"
+        },
+        {
+          "chunk_id": "Endorsement_HO-2405.pdf-f02857e5-0",
+          "score": 3.090728759765625,
+          "source": "Endorsement_HO-2405.pdf"
+        }
+      ],
+      "latency_ms": 46054.61
+    },
+    {
+      "id": 2,
+      "question": "Under HO-0304 edition 02-23, is water backup through sewers or drains excluded under E-17 even if caused by mechanical or electrical failure of the sump pump itself?",
+      "expected_chunk_id": "HO-0304_ed-02-23.pdf-2fb79e28-9",
+      "hard_token": true,
+      "hit_at_3": false,
+      "retrieved_top5": [
+        {
+          "chunk_id": "Endorsement_HO-2306.pdf-e3b74437-0",
+          "score": 6.300963401794434,
+          "source": "Endorsement_HO-2306.pdf"
+        },
+        {
+          "chunk_id": "Endorsement_HO-2405.pdf-aa4254f4-2",
+          "score": 4.685720443725586,
+          "source": "Endorsement_HO-2405.pdf"
+        },
+        {
+          "chunk_id": "Endorsement_HO-2405.pdf-9cb988e2-1",
+          "score": 4.168651580810547,
+          "source": "Endorsement_HO-2405.pdf"
+        },
+        {
+          "chunk_id": "Endorsement_HO-2405.pdf-f02857e5-0",
+          "score": 4.0881452560424805,
+          "source": "Endorsement_HO-2405.pdf"
+        },
+        {
+          "chunk_id": "HO-0304_ed-02-23.pdf-eea7015e-10",
+          "score": 3.9074621200561523,
+          "source": "HO-0304_ed-02-23.pdf"
+        }
+      ],
+      "latency_ms": 1899.15
+    },
+    {
+      "id": 3,
+      "question": "Does exclusion E-17 apply under form HO-0304 edition 03-24 to a sudden and accidental discharge of water from a household appliance?",
+      "expected_chunk_id": "HO-0304_ed-03-24.pdf-54f590cb-9",
+      "hard_token": true,
+      "hit_at_3": false,
+      "retrieved_top5": [
+        {
+          "chunk_id": "Endorsement_HO-2405.pdf-f02857e5-0",
+          "score": 7.830707550048828,
+          "source": "Endorsement_HO-2405.pdf"
+        },
+        {
+          "chunk_id": "Endorsement_HO-2405.pdf-aa4254f4-2",
+          "score": 5.531135559082031,
+          "source": "Endorsement_HO-2405.pdf"
+        },
+        {
+          "chunk_id": "Endorsement_HO-2405.pdf-9cb988e2-1",
+          "score": 5.139355659484863,
+          "source": "Endorsement_HO-2405.pdf"
+        },
+        {
+          "chunk_id": "Endorsement_HO-2405.pdf-a9e6adde-3",
+          "score": 4.510092258453369,
+          "source": "Endorsement_HO-2405.pdf"
+        },
+        {
+          "chunk_id": "Endorsement_HO-2306.pdf-13c1f3ee-2",
+          "score": 3.9546449184417725,
+          "source": "Endorsement_HO-2306.pdf"
+        }
+      ],
+      "latency_ms": 881.09
+    },
+    {
+      "id": 4,
+      "question": "What form number and edition date appear in the Declarations of the March 2024 homeowners special policy?",
+      "expected_chunk_id": "HO-0304_ed-03-24.pdf-dc71e7da-0",
+      "hard_token": true,
+      "hit_at_3": true,
+      "retrieved_top5": [
+        {
+          "chunk_id": "HO-0304_ed-03-24.pdf-dc71e7da-0",
+          "score": 7.1320271492004395,
+          "source": "HO-0304_ed-03-24.pdf"
+        },
+        {
+          "chunk_id": "HO-0304_ed-02-23.pdf-023cd8c4-0",
+          "score": 5.658268928527832,
+          "source": "HO-0304_ed-02-23.pdf"
+        },
+        {
+          "chunk_id": "HO-0304_ed-01-22.pdf-86901098-0",
+          "score": 5.492773532867432,
+          "source": "HO-0304_ed-01-22.pdf"
+        },
+        {
+          "chunk_id": "HO-0500_ed-01-23.pdf-6b1caf64-0",
+          "score": 3.5489449501037598,
+          "source": "HO-0500_ed-01-23.pdf"
+        },
+        {
+          "chunk_id": "Endorsement_HO-2405.pdf-a9e6adde-3",
+          "score": -5.482167720794678,
+          "source": "Endorsement_HO-2405.pdf"
+        }
+      ],
+      "latency_ms": 827.67
+    },
+    {
+      "id": 5,
+      "question": "Under Form HO-0500, what does exclusion F-3 say about water that backs up through sewers or drains?",
+      "expected_chunk_id": "HO-0500_ed-01-23.pdf-08768ab3-3",
+      "hard_token": true,
+      "hit_at_3": true,
+      "retrieved_top5": [
+        {
+          "chunk_id": "HO-0500_ed-01-23.pdf-08768ab3-3",
+          "score": 3.991095542907715,
+          "source": "HO-0500_ed-01-23.pdf"
+        },
+        {
+          "chunk_id": "Endorsement_HO-2306.pdf-e3b74437-0",
+          "score": 3.642148017883301,
+          "source": "Endorsement_HO-2306.pdf"
+        },
+        {
+          "chunk_id": "Endorsement_HO-2306.pdf-13c1f3ee-2",
+          "score": 3.6157805919647217,
+          "source": "Endorsement_HO-2306.pdf"
+        },
+        {
+          "chunk_id": "Endorsement_HO-2405.pdf-a9e6adde-3",
+          "score": 3.32595157623291,
+          "source": "Endorsement_HO-2405.pdf"
+        },
+        {
+          "chunk_id": "Endorsement_HO-2405.pdf-aa4254f4-2",
+          "score": 2.9090871810913086,
+          "source": "Endorsement_HO-2405.pdf"
+        }
+      ],
+      "latency_ms": 897.33
+    },
+    {
+      "id": 6,
+      "question": "What does Endorsement HO-2306 do, and to which editions of HO-0304 does it attach?",
+      "expected_chunk_id": "Endorsement_HO-2306.pdf-e3b74437-0",
+      "hard_token": true,
+      "hit_at_3": true,
+      "retrieved_top5": [
+        {
+          "chunk_id": "Endorsement_HO-2306.pdf-e3b74437-0",
+          "score": 7.623445510864258,
+          "source": "Endorsement_HO-2306.pdf"
+        },
+        {
+          "chunk_id": "Endorsement_HO-2405.pdf-f02857e5-0",
+          "score": 6.192245960235596,
+          "source": "Endorsement_HO-2405.pdf"
+        },
+        {
+          "chunk_id": "Endorsement_HO-2405.pdf-a9e6adde-3",
+          "score": 6.081629753112793,
+          "source": "Endorsement_HO-2405.pdf"
+        },
+        {
+          "chunk_id": "Endorsement_HO-2306.pdf-54c30e15-3",
+          "score": 3.292174816131592,
+          "source": "Endorsement_HO-2306.pdf"
+        },
+        {
+          "chunk_id": "Endorsement_HO-2306.pdf-13c1f3ee-2",
+          "score": 3.1178741455078125,
+          "source": "Endorsement_HO-2306.pdf"
+        }
+      ],
+      "latency_ms": 878.83
+    },
+    {
+      "id": 7,
+      "question": "What is the per-occurrence Basic Limit of liability under Endorsement HO-2306?",
+      "expected_chunk_id": "Endorsement_HO-2306.pdf-b423be67-1",
+      "hard_token": true,
+      "hit_at_3": true,
+      "retrieved_top5": [
+        {
+          "chunk_id": "Endorsement_HO-2405.pdf-f02857e5-0",
+          "score": 4.104485511779785,
+          "source": "Endorsement_HO-2405.pdf"
+        },
+        {
+          "chunk_id": "HO-0304_ed-03-24.pdf-c9a04da1-11",
+          "score": 3.5662992000579834,
+          "source": "HO-0304_ed-03-24.pdf"
+        },
+        {
+          "chunk_id": "Endorsement_HO-2306.pdf-b423be67-1",
+          "score": 3.439016342163086,
+          "source": "Endorsement_HO-2306.pdf"
+        },
+        {
+          "chunk_id": "Endorsement_HO-2306.pdf-e3b74437-0",
+          "score": 1.7816643714904785,
+          "source": "Endorsement_HO-2306.pdf"
+        },
+        {
+          "chunk_id": "HO-0304_ed-02-23.pdf-eea7015e-10",
+          "score": -0.6707649230957031,
+          "source": "HO-0304_ed-02-23.pdf"
+        }
+      ],
+      "latency_ms": 879.98
+    },
+    {
+      "id": 8,
+      "question": "Can Endorsement HO-2405 be attached to a HO-0304 edition 01-22 policy?",
+      "expected_chunk_id": "Endorsement_HO-2405.pdf-a9e6adde-3",
+      "hard_token": true,
+      "hit_at_3": true,
+      "retrieved_top5": [
+        {
+          "chunk_id": "Endorsement_HO-2405.pdf-a9e6adde-3",
+          "score": 8.263642311096191,
+          "source": "Endorsement_HO-2405.pdf"
+        },
+        {
+          "chunk_id": "Endorsement_HO-2306.pdf-e3b74437-0",
+          "score": 8.1837158203125,
+          "source": "Endorsement_HO-2306.pdf"
+        },
+        {
+          "chunk_id": "Endorsement_HO-2405.pdf-f02857e5-0",
+          "score": 6.719391822814941,
+          "source": "Endorsement_HO-2405.pdf"
+        },
+        {
+          "chunk_id": "Endorsement_HO-2306.pdf-54c30e15-3",
+          "score": 5.985701560974121,
+          "source": "Endorsement_HO-2306.pdf"
+        },
+        {
+          "chunk_id": "Endorsement_HO-2306.pdf-13c1f3ee-2",
+          "score": 4.664966106414795,
+          "source": "Endorsement_HO-2306.pdf"
+        }
+      ],
+      "latency_ms": 818.28
+    },
+    {
+      "id": 9,
+      "question": "Is loss caused by flood or surface water covered under Coverage A of the HO-0304 homeowners special form?",
+      "expected_chunk_id": "HO-0304_ed-01-22.pdf-3b560bf4-4",
+      "hard_token": false,
+      "hit_at_3": false,
+      "retrieved_top5": [
+        {
+          "chunk_id": "Endorsement_HO-2306.pdf-13c1f3ee-2",
+          "score": 6.613567352294922,
+          "source": "Endorsement_HO-2306.pdf"
+        },
+        {
+          "chunk_id": "Endorsement_HO-2306.pdf-e3b74437-0",
+          "score": 5.395837783813477,
+          "source": "Endorsement_HO-2306.pdf"
+        },
+        {
+          "chunk_id": "Endorsement_HO-2405.pdf-a9e6adde-3",
+          "score": 4.569624423980713,
+          "source": "Endorsement_HO-2405.pdf"
+        },
+        {
+          "chunk_id": "HO-0304_ed-03-24.pdf-fd2b097d-5",
+          "score": 2.996053695678711,
+          "source": "HO-0304_ed-03-24.pdf"
+        },
+        {
+          "chunk_id": "HO-0500_ed-01-23.pdf-08768ab3-3",
+          "score": 2.4898345470428467,
+          "source": "HO-0500_ed-01-23.pdf"
+        }
+      ],
+      "latency_ms": 906.7
+    },
+    {
+      "id": 10,
+      "question": "Is mold hidden within the walls that results from a covered plumbing leak covered under HO-0304 edition 01-22, and if so up to what amount?",
+      "expected_chunk_id": "HO-0304_ed-01-22.pdf-3d30e7a3-7",
+      "hard_token": false,
+      "hit_at_3": true,
+      "retrieved_top5": [
+        {
+          "chunk_id": "HO-0304_ed-02-23.pdf-2dd675cc-7",
+          "score": 4.731283187866211,
+          "source": "HO-0304_ed-02-23.pdf"
+        },
+        {
+          "chunk_id": "HO-0304_ed-01-22.pdf-3d30e7a3-7",
+          "score": 4.681616306304932,
+          "source": "HO-0304_ed-01-22.pdf"
+        },
+        {
+          "chunk_id": "HO-0304_ed-03-24.pdf-f9a3bdc8-7",
+          "score": 3.373267650604248,
+          "source": "HO-0304_ed-03-24.pdf"
+        },
+        {
+          "chunk_id": "Endorsement_HO-2306.pdf-e3b74437-0",
+          "score": -2.423410415649414,
+          "source": "Endorsement_HO-2306.pdf"
+        },
+        {
+          "chunk_id": "Endorsement_HO-2405.pdf-f02857e5-0",
+          "score": -3.578054428100586,
+          "source": "Endorsement_HO-2405.pdf"
+        }
+      ],
+      "latency_ms": 878.79
+    },
+    {
+      "id": 11,
+      "question": "What is the Coverage D Loss of Use limit shown in the Declarations for HO-0304 edition 01-22?",
+      "expected_chunk_id": "HO-0304_ed-01-22.pdf-86901098-0",
+      "hard_token": false,
+      "hit_at_3": true,
+      "retrieved_top5": [
+        {
+          "chunk_id": "HO-0304_ed-01-22.pdf-86901098-0",
+          "score": 6.038172721862793,
+          "source": "HO-0304_ed-01-22.pdf"
+        },
+        {
+          "chunk_id": "HO-0304_ed-02-23.pdf-023cd8c4-0",
+          "score": 5.628408908843994,
+          "source": "HO-0304_ed-02-23.pdf"
+        },
+        {
+          "chunk_id": "HO-0500_ed-01-23.pdf-6b1caf64-0",
+          "score": 5.162660121917725,
+          "source": "HO-0500_ed-01-23.pdf"
+        },
+        {
+          "chunk_id": "HO-0304_ed-03-24.pdf-dc71e7da-0",
+          "score": 4.93681526184082,
+          "source": "HO-0304_ed-03-24.pdf"
+        },
+        {
+          "chunk_id": "Endorsement_HO-2306.pdf-e3b74437-0",
+          "score": 4.391968727111816,
+          "source": "Endorsement_HO-2306.pdf"
+        }
+      ],
+      "latency_ms": 899.05
+    },
+    {
+      "id": 12,
+      "question": "According to the claim documents checklist, is the Pre-authorization approval letter required to be submitted with a claim?",
+      "expected_chunk_id": "Claim_Form.pdf-7047e058-37",
+      "hard_token": false,
+      "hit_at_3": true,
+      "retrieved_top5": [
+        {
+          "chunk_id": "Claim_Form.pdf-7047e058-37",
+          "score": 5.756762504577637,
+          "source": "Claim_Form.pdf"
+        },
+        {
+          "chunk_id": "Claim_Form.pdf-dc38b707-12",
+          "score": 0.6480538845062256,
+          "source": "Claim_Form.pdf"
+        },
+        {
+          "chunk_id": "Claim_Form.pdf-eebfdcfc-26",
+          "score": -3.4047834873199463,
+          "source": "Claim_Form.pdf"
+        },
+        {
+          "chunk_id": "Claim_Form.pdf-0fa28234-16",
+          "score": -4.176112651824951,
+          "source": "Claim_Form.pdf"
+        },
+        {
+          "chunk_id": "Claim_Form.pdf-d06791b9-15",
+          "score": -5.730756759643555,
+          "source": "Claim_Form.pdf"
+        }
+      ],
+      "latency_ms": 847.06
+    }
+  ]
+}
