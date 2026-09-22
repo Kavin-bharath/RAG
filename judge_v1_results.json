@@ -1,0 +1,252 @@
+{
+  "CLM-2026-0001": {
+    "verdict": "BAD",
+    "assertions": {
+      "claim_number": true,
+      "date_parseable": true,
+      "amount_numeric": true,
+      "exclusion_when_denial": true
+    },
+    "assertion_status": "PASS"
+  },
+  "CLM-2026-0002": {
+    "verdict": "BAD",
+    "assertions": {
+      "claim_number": true,
+      "date_parseable": true,
+      "amount_numeric": true,
+      "exclusion_when_denial": true
+    },
+    "assertion_status": "PASS"
+  },
+  "CLM-2026-0003": {
+    "verdict": "BAD",
+    "assertions": {
+      "claim_number": true,
+      "date_parseable": true,
+      "amount_numeric": true,
+      "exclusion_when_denial": true
+    },
+    "assertion_status": "PASS"
+  },
+  "CLM-2026-0004": {
+    "verdict": "GOOD",
+    "assertions": {
+      "claim_number": true,
+      "date_parseable": true,
+      "amount_numeric": true,
+      "exclusion_when_denial": false
+    },
+    "assertion_status": "FAIL (exclusion_when_denial)"
+  },
+  "CLM-2026-0005": {
+    "verdict": "GOOD",
+    "assertions": {
+      "claim_number": true,
+      "date_parseable": true,
+      "amount_numeric": true,
+      "exclusion_when_denial": true
+    },
+    "assertion_status": "PASS"
+  },
+  "CLM-2026-0006": {
+    "verdict": "GOOD",
+    "assertions": {
+      "claim_number": true,
+      "date_parseable": true,
+      "amount_numeric": true,
+      "exclusion_when_denial": true
+    },
+    "assertion_status": "PASS"
+  },
+  "CLM-2026-0007": {
+    "verdict": "BAD",
+    "assertions": {
+      "claim_number": true,
+      "date_parseable": true,
+      "amount_numeric": true,
+      "exclusion_when_denial": false
+    },
+    "assertion_status": "FAIL (exclusion_when_denial)"
+  },
+  "CLM-2026-0008": {
+    "verdict": "BAD",
+    "assertions": {
+      "claim_number": true,
+      "date_parseable": true,
+      "amount_numeric": true,
+      "exclusion_when_denial": true
+    },
+    "assertion_status": "PASS"
+  },
+  "CLM-2026-0009": {
+    "verdict": "GOOD",
+    "assertions": {
+      "claim_number": true,
+      "date_parseable": true,
+      "amount_numeric": true,
+      "exclusion_when_denial": false
+    },
+    "assertion_status": "FAIL (exclusion_when_denial)"
+  },
+  "CLM-2026-0010": {
+    "verdict": "GOOD",
+    "assertions": {
+      "claim_number": true,
+      "date_parseable": true,
+      "amount_numeric": true,
+      "exclusion_when_denial": true
+    },
+    "assertion_status": "PASS"
+  },
+  "CLM-2026-0011": {
+    "verdict": "GOOD",
+    "assertions": {
+      "claim_number": true,
+      "date_parseable": true,
+      "amount_numeric": true,
+      "exclusion_when_denial": false
+    },
+    "assertion_status": "FAIL (exclusion_when_denial)"
+  },
+  "CLM-2026-0012": {
+    "verdict": "GOOD",
+    "assertions": {
+      "claim_number": true,
+      "date_parseable": true,
+      "amount_numeric": true,
+      "exclusion_when_denial": false
+    },
+    "assertion_status": "FAIL (exclusion_when_denial)"
+  },
+  "CLM-2026-0013": {
+    "verdict": "GOOD",
+    "assertions": {
+      "claim_number": true,
+      "date_parseable": true,
+      "amount_numeric": true,
+      "exclusion_when_denial": false
+    },
+    "assertion_status": "FAIL (exclusion_when_denial)"
+  },
+  "CLM-2026-0014": {
+    "verdict": "BAD",
+    "assertions": {
+      "claim_number": true,
+      "date_parseable": true,
+      "amount_numeric": true,
+      "exclusion_when_denial": true
+    },
+    "assertion_status": "PASS"
+  },
+  "CLM-2026-0015": {
+    "verdict": "BAD",
+    "assertions": {
+      "claim_number": true,
+      "date_parseable": true,
+      "amount_numeric": true,
+      "exclusion_when_denial": false
+    },
+    "assertion_status": "FAIL (exclusion_when_denial)"
+  },
+  "CLM-2026-0016": {
+    "verdict": "BAD",
+    "assertions": {
+      "claim_number": true,
+      "date_parseable": true,
+      "amount_numeric": true,
+      "exclusion_when_denial": true
+    },
+    "assertion_status": "PASS"
+  },
+  "CLM-2026-0017": {
+    "verdict": "BAD",
+    "assertions": {
+      "claim_number": true,
+      "date_parseable": true,
+      "amount_numeric": true,
+      "exclusion_when_denial": false
+    },
+    "assertion_status": "FAIL (exclusion_when_denial)"
+  },
+  "CLM-2026-0018": {
+    "verdict": "GOOD",
+    "assertions": {
+      "claim_number": true,
+      "date_parseable": true,
+      "amount_numeric": true,
+      "exclusion_when_denial": true
+    },
+    "assertion_status": "PASS"
+  },
+  "CLM-2026-0019": {
+    "verdict": "GOOD",
+    "assertions": {
+      "claim_number": true,
+      "date_parseable": true,
+      "amount_numeric": true,
+      "exclusion_when_denial": true
+    },
+    "assertion_status": "PASS"
+  },
+  "CLM-2026-0020": {
+    "verdict": "BAD",
+    "assertions": {
+      "claim_number": true,
+      "date_parseable": true,
+      "amount_numeric": true,
+      "exclusion_when_denial": true
+    },
+    "assertion_status": "PASS"
+  },
+  "CLM-2026-0021": {
+    "verdict": "GOOD",
+    "assertions": {
+      "claim_number": true,
+      "date_parseable": true,
+      "amount_numeric": true,
+      "exclusion_when_denial": true
+    },
+    "assertion_status": "PASS"
+  },
+  "CLM-2026-0022": {
+    "verdict": "BAD",
+    "assertions": {
+      "claim_number": true,
+      "date_parseable": true,
+      "amount_numeric": true,
+      "exclusion_when_denial": true
+    },
+    "assertion_status": "PASS"
+  },
+  "CLM-2026-0023": {
+    "verdict": "BAD",
+    "assertions": {
+      "claim_number": true,
+      "date_parseable": true,
+      "amount_numeric": true,
+      "exclusion_when_denial": true
+    },
+    "assertion_status": "PASS"
+  },
+  "CLM-2026-0024": {
+    "verdict": "GOOD",
+    "assertions": {
+      "claim_number": true,
+      "date_parseable": true,
+      "amount_numeric": true,
+      "exclusion_when_denial": true
+    },
+    "assertion_status": "PASS"
+  },
+  "CLM-2026-0025": {
+    "verdict": "BAD",
+    "assertions": {
+      "claim_number": true,
+      "date_parseable": true,
+      "amount_numeric": true,
+      "exclusion_when_denial": true
+    },
+    "assertion_status": "PASS"
+  }
+}
