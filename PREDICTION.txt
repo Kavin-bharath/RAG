@@ -1,0 +1,25 @@
+WEEK 5 → WEEK 6 PREDICTION (NOT YET COMMITTED)
+
+Date: 2026-09-09
+Current sample: 20 traces, all correct (100%)
+Mode to address: "Ambiguous query (no form/edition specified)" — 3/20 = 15%
+
+PREDICTION:
+-----------
+When a query does not explicitly specify which HO-0304 edition, the system will infer the latest edition (ed-03-24) and prepend a clarification to the /query response: "Note: interpreting this query against HO-0304 Edition 03-24; if you meant a different edition, re-ask with the edition number."
+
+This changes the behavior from silent assumption (ed-01-22 was picked for Coverage A limit) to explicit inference (always ed-03-24 unless told otherwise).
+
+EXPECTED RESULT:
+- Ambiguous-query mode frequency: 3/20 (15%) → 0/20 (0%)
+  - Reason: all queries will be disambiguated by explicit statement
+- Total correct answers: 20/20 (100%) → ≥19/20 (95%)
+  - Risk: users who *intended* to ask about ed-01-22 or ed-02-23 will now always get ed-03-24, potentially missing edition-specific information (e.g., older policy holders)
+  - Mitigation: the explicit note will prompt them to clarify
+
+FALSIFIABILITY:
+- Measure 1: Run the same 20 traces again with the change. Count how many now have an explicit edition-inference note in the response.
+- Measure 2: If any trace's answer differs (becomes wrong due to ed-03-24 assumption), mark as regression.
+
+STATUS: READY FOR REVIEW
+(Do not commit until you have reviewed and approved the prediction logic)
