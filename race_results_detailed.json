@@ -1,0 +1,603 @@
+{
+  "agent": [
+    {
+      "claim_id": "CLM-2026-0001",
+      "step_count": 2,
+      "tokens_used": 1025,
+      "cost_used": 0.000103,
+      "execution_time": 4.16,
+      "budget_hit": null,
+      "completed": true,
+      "steps": [
+        {
+          "step": 1,
+          "action": "retrieve_claim",
+          "tokens": 258
+        },
+        {
+          "step": 2,
+          "action": "retrieve_claim",
+          "tokens": 319
+        }
+      ]
+    },
+    {
+      "claim_id": "CLM-2026-0002",
+      "step_count": 3,
+      "tokens_used": 1439,
+      "cost_used": 0.000144,
+      "execution_time": 2.81,
+      "budget_hit": null,
+      "completed": true,
+      "steps": [
+        {
+          "step": 1,
+          "action": "retrieve_claim",
+          "tokens": 249
+        },
+        {
+          "step": 2,
+          "action": "retrieve_claim",
+          "tokens": 342
+        },
+        {
+          "step": 3,
+          "action": "check_policy_exclusions",
+          "tokens": 377
+        }
+      ]
+    },
+    {
+      "claim_id": "CLM-2026-0003",
+      "step_count": 2,
+      "tokens_used": 1028,
+      "cost_used": 0.000103,
+      "execution_time": 2.01,
+      "budget_hit": null,
+      "completed": true,
+      "steps": [
+        {
+          "step": 1,
+          "action": "retrieve_claim",
+          "tokens": 254
+        },
+        {
+          "step": 2,
+          "action": "check_policy_exclusions",
+          "tokens": 344
+        }
+      ]
+    },
+    {
+      "claim_id": "CLM-2026-0004",
+      "step_count": 2,
+      "tokens_used": 1091,
+      "cost_used": 0.000109,
+      "execution_time": 2.24,
+      "budget_hit": null,
+      "completed": true,
+      "steps": [
+        {
+          "step": 1,
+          "action": "retrieve_claim",
+          "tokens": 265
+        },
+        {
+          "step": 2,
+          "action": "check_policy_exclusions",
+          "tokens": 396
+        }
+      ]
+    },
+    {
+      "claim_id": "CLM-2026-0005",
+      "step_count": 2,
+      "tokens_used": 1037,
+      "cost_used": 0.000104,
+      "execution_time": 2.08,
+      "budget_hit": null,
+      "completed": true,
+      "steps": [
+        {
+          "step": 1,
+          "action": "retrieve_claim",
+          "tokens": 263
+        },
+        {
+          "step": 2,
+          "action": "check_policy_exclusions",
+          "tokens": 344
+        }
+      ]
+    },
+    {
+      "claim_id": "CLM-2026-0006",
+      "step_count": 2,
+      "tokens_used": 1002,
+      "cost_used": 0.0001,
+      "execution_time": 2.26,
+      "budget_hit": null,
+      "completed": true,
+      "steps": [
+        {
+          "step": 1,
+          "action": "retrieve_claim",
+          "tokens": 249
+        },
+        {
+          "step": 2,
+          "action": "check_policy_exclusions",
+          "tokens": 323
+        }
+      ]
+    },
+    {
+      "claim_id": "CLM-2026-0007",
+      "step_count": 2,
+      "tokens_used": 1053,
+      "cost_used": 0.000105,
+      "execution_time": 2.71,
+      "budget_hit": null,
+      "completed": true,
+      "steps": [
+        {
+          "step": 1,
+          "action": "retrieve_claim",
+          "tokens": 259
+        },
+        {
+          "step": 2,
+          "action": "retrieve_claim",
+          "tokens": 346
+        }
+      ]
+    },
+    {
+      "claim_id": "CLM-2026-0008",
+      "step_count": 2,
+      "tokens_used": 1018,
+      "cost_used": 0.000102,
+      "execution_time": 2.03,
+      "budget_hit": null,
+      "completed": true,
+      "steps": [
+        {
+          "step": 1,
+          "action": "retrieve_claim",
+          "tokens": 251
+        },
+        {
+          "step": 2,
+          "action": "retrieve_claim",
+          "tokens": 319
+        }
+      ]
+    },
+    {
+      "claim_id": "CLM-2026-0009",
+      "step_count": 1,
+      "tokens_used": 670,
+      "cost_used": 6.7e-05,
+      "execution_time": 1.54,
+      "budget_hit": null,
+      "completed": true,
+      "steps": [
+        {
+          "step": 1,
+          "action": "retrieve_claim",
+          "tokens": 263
+        }
+      ]
+    },
+    {
+      "claim_id": "CLM-2026-0010",
+      "step_count": 2,
+      "tokens_used": 1032,
+      "cost_used": 0.000103,
+      "execution_time": 2.34,
+      "budget_hit": null,
+      "completed": true,
+      "steps": [
+        {
+          "step": 1,
+          "action": "retrieve_claim",
+          "tokens": 258
+        },
+        {
+          "step": 2,
+          "action": "check_policy_exclusions",
+          "tokens": 344
+        }
+      ]
+    }
+  ],
+  "workflow": [
+    {
+      "claim_id": "CLM-2026-0001",
+      "step_count": 4,
+      "tokens_used": 0,
+      "cost_used": 0.0,
+      "execution_time": 0.0,
+      "budget_hit": null,
+      "completed": true,
+      "verdict": {
+        "claim_id": "CLM-2026-0001",
+        "status": "partial",
+        "payable": 24000.0,
+        "reasoning": "Partial (50%): $24000.00 = ($50000.00 \u00d7 50%) - $1000.00 excess"
+      },
+      "steps": [
+        {
+          "step": 1,
+          "action": "retrieve_claim",
+          "result": "success"
+        },
+        {
+          "step": 2,
+          "action": "check_policy_exclusions",
+          "result": "partial"
+        },
+        {
+          "step": 3,
+          "action": "compute_payout",
+          "result": "$24000.00"
+        },
+        {
+          "step": 4,
+          "action": "synthesize_verdict",
+          "result": "complete"
+        }
+      ]
+    },
+    {
+      "claim_id": "CLM-2026-0002",
+      "step_count": 4,
+      "tokens_used": 0,
+      "cost_used": 0.0,
+      "execution_time": 0.0,
+      "budget_hit": null,
+      "completed": true,
+      "verdict": {
+        "claim_id": "CLM-2026-0002",
+        "status": "partial",
+        "payable": 36500.0,
+        "reasoning": "Partial (50%): $36500.00 = ($75000.00 \u00d7 50%) - $1000.00 excess"
+      },
+      "steps": [
+        {
+          "step": 1,
+          "action": "retrieve_claim",
+          "result": "success"
+        },
+        {
+          "step": 2,
+          "action": "check_policy_exclusions",
+          "result": "partial"
+        },
+        {
+          "step": 3,
+          "action": "compute_payout",
+          "result": "$36500.00"
+        },
+        {
+          "step": 4,
+          "action": "synthesize_verdict",
+          "result": "complete"
+        }
+      ]
+    },
+    {
+      "claim_id": "CLM-2026-0003",
+      "step_count": 4,
+      "tokens_used": 0,
+      "cost_used": 0.0,
+      "execution_time": 0.0,
+      "budget_hit": null,
+      "completed": true,
+      "verdict": {
+        "claim_id": "CLM-2026-0003",
+        "status": "approved",
+        "payable": 24000,
+        "reasoning": "Approved: $24000.00 = $25000.00 - $1000.00 excess"
+      },
+      "steps": [
+        {
+          "step": 1,
+          "action": "retrieve_claim",
+          "result": "success"
+        },
+        {
+          "step": 2,
+          "action": "check_policy_exclusions",
+          "result": "covered"
+        },
+        {
+          "step": 3,
+          "action": "compute_payout",
+          "result": "$24000.00"
+        },
+        {
+          "step": 4,
+          "action": "synthesize_verdict",
+          "result": "complete"
+        }
+      ]
+    },
+    {
+      "claim_id": "CLM-2026-0004",
+      "step_count": 4,
+      "tokens_used": 0,
+      "cost_used": 0.0,
+      "execution_time": 0.0,
+      "budget_hit": null,
+      "completed": true,
+      "verdict": {
+        "claim_id": "CLM-2026-0004",
+        "status": "partial",
+        "payable": 49000.0,
+        "reasoning": "Partial (50%): $49000.00 = ($100000.00 \u00d7 50%) - $1000.00 excess"
+      },
+      "steps": [
+        {
+          "step": 1,
+          "action": "retrieve_claim",
+          "result": "success"
+        },
+        {
+          "step": 2,
+          "action": "check_policy_exclusions",
+          "result": "partial"
+        },
+        {
+          "step": 3,
+          "action": "compute_payout",
+          "result": "$49000.00"
+        },
+        {
+          "step": 4,
+          "action": "synthesize_verdict",
+          "result": "complete"
+        }
+      ]
+    },
+    {
+      "claim_id": "CLM-2026-0005",
+      "step_count": 4,
+      "tokens_used": 0,
+      "cost_used": 0.0,
+      "execution_time": 0.0,
+      "budget_hit": null,
+      "completed": true,
+      "verdict": {
+        "claim_id": "CLM-2026-0005",
+        "status": "approved",
+        "payable": 34000,
+        "reasoning": "Approved: $34000.00 = $35000.00 - $1000.00 excess"
+      },
+      "steps": [
+        {
+          "step": 1,
+          "action": "retrieve_claim",
+          "result": "success"
+        },
+        {
+          "step": 2,
+          "action": "check_policy_exclusions",
+          "result": "covered"
+        },
+        {
+          "step": 3,
+          "action": "compute_payout",
+          "result": "$34000.00"
+        },
+        {
+          "step": 4,
+          "action": "synthesize_verdict",
+          "result": "complete"
+        }
+      ]
+    },
+    {
+      "claim_id": "CLM-2026-0006",
+      "step_count": 4,
+      "tokens_used": 0,
+      "cost_used": 0.0,
+      "execution_time": 0.0,
+      "budget_hit": null,
+      "completed": true,
+      "verdict": {
+        "claim_id": "CLM-2026-0006",
+        "status": "denied",
+        "payable": 0.0,
+        "reasoning": "Claim denied: loss type excluded or not covered."
+      },
+      "steps": [
+        {
+          "step": 1,
+          "action": "retrieve_claim",
+          "result": "success"
+        },
+        {
+          "step": 2,
+          "action": "check_policy_exclusions",
+          "result": "excluded"
+        },
+        {
+          "step": 3,
+          "action": "compute_payout",
+          "result": "$0.00"
+        },
+        {
+          "step": 4,
+          "action": "synthesize_verdict",
+          "result": "complete"
+        }
+      ]
+    },
+    {
+      "claim_id": "CLM-2026-0007",
+      "step_count": 4,
+      "tokens_used": 0,
+      "cost_used": 0.0,
+      "execution_time": 0.0,
+      "budget_hit": null,
+      "completed": true,
+      "verdict": {
+        "claim_id": "CLM-2026-0007",
+        "status": "approved",
+        "payable": 14000,
+        "reasoning": "Approved: $14000.00 = $15000.00 - $1000.00 excess"
+      },
+      "steps": [
+        {
+          "step": 1,
+          "action": "retrieve_claim",
+          "result": "success"
+        },
+        {
+          "step": 2,
+          "action": "check_policy_exclusions",
+          "result": "covered"
+        },
+        {
+          "step": 3,
+          "action": "compute_payout",
+          "result": "$14000.00"
+        },
+        {
+          "step": 4,
+          "action": "synthesize_verdict",
+          "result": "complete"
+        }
+      ]
+    },
+    {
+      "claim_id": "CLM-2026-0008",
+      "step_count": 4,
+      "tokens_used": 0,
+      "cost_used": 0.0,
+      "execution_time": 0.0,
+      "budget_hit": null,
+      "completed": true,
+      "verdict": {
+        "claim_id": "CLM-2026-0008",
+        "status": "partial",
+        "payable": 19000.0,
+        "reasoning": "Partial (50%): $19000.00 = ($40000.00 \u00d7 50%) - $1000.00 excess"
+      },
+      "steps": [
+        {
+          "step": 1,
+          "action": "retrieve_claim",
+          "result": "success"
+        },
+        {
+          "step": 2,
+          "action": "check_policy_exclusions",
+          "result": "partial"
+        },
+        {
+          "step": 3,
+          "action": "compute_payout",
+          "result": "$19000.00"
+        },
+        {
+          "step": 4,
+          "action": "synthesize_verdict",
+          "result": "complete"
+        }
+      ]
+    },
+    {
+      "claim_id": "CLM-2026-0009",
+      "step_count": 4,
+      "tokens_used": 0,
+      "cost_used": 0.0,
+      "execution_time": 0.0,
+      "budget_hit": null,
+      "completed": true,
+      "verdict": {
+        "claim_id": "CLM-2026-0009",
+        "status": "partial",
+        "payable": 9000.0,
+        "reasoning": "Partial (50%): $9000.00 = ($20000.00 \u00d7 50%) - $1000.00 excess"
+      },
+      "steps": [
+        {
+          "step": 1,
+          "action": "retrieve_claim",
+          "result": "success"
+        },
+        {
+          "step": 2,
+          "action": "check_policy_exclusions",
+          "result": "partial"
+        },
+        {
+          "step": 3,
+          "action": "compute_payout",
+          "result": "$9000.00"
+        },
+        {
+          "step": 4,
+          "action": "synthesize_verdict",
+          "result": "complete"
+        }
+      ]
+    },
+    {
+      "claim_id": "CLM-2026-0010",
+      "step_count": 4,
+      "tokens_used": 0,
+      "cost_used": 0.0,
+      "execution_time": 0.0,
+      "budget_hit": null,
+      "completed": true,
+      "verdict": {
+        "claim_id": "CLM-2026-0010",
+        "status": "partial",
+        "payable": 26500.0,
+        "reasoning": "Partial (50%): $26500.00 = ($55000.00 \u00d7 50%) - $1000.00 excess"
+      },
+      "steps": [
+        {
+          "step": 1,
+          "action": "retrieve_claim",
+          "result": "success"
+        },
+        {
+          "step": 2,
+          "action": "check_policy_exclusions",
+          "result": "partial"
+        },
+        {
+          "step": 3,
+          "action": "compute_payout",
+          "result": "$26500.00"
+        },
+        {
+          "step": 4,
+          "action": "synthesize_verdict",
+          "result": "complete"
+        }
+      ]
+    }
+  ],
+  "metrics": {
+    "agent": {
+      "system": "Agent",
+      "pass_rate": "100.0%",
+      "p50_latency_s": "2.25",
+      "total_tokens": 10395,
+      "cost_per_claim": "$0.0001"
+    },
+    "workflow": {
+      "system": "Fixed Workflow",
+      "pass_rate": "100.0%",
+      "p50_latency_s": "0.00",
+      "total_tokens": 0,
+      "cost_per_claim": "$0.0000"
+    }
+  },
+  "budget_log": null
+}
