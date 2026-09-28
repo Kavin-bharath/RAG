@@ -1,0 +1,18 @@
+WEEK 6 JUDGE VALIDATION REPORT
+==========================================================================================
+
+Human Labels File: D:\Kavin\RAG\labels_25.json
+Label Count: 25
+Label Commit/Timestamp: Predate judge run
+
+Agreement (v1): 48.0%
+Agreement (v2): 56.0%
+Improvement: +8.0%
+
+Assertions Passed: 68/100
+Assertion Count: 4
+Judge Criteria Count: 5
+
+Disagreements (First 2):
+  1. CLM-2026-0001: Human=GOOD, Judge V1 said BAD
+  2. CLM-2026-0002: Human=GOOD, Judge V1 said BAD

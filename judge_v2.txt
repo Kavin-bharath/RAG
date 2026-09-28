@@ -1,0 +1,56 @@
+============================================================================================
+JUDGE V2: IMPROVED PROMPT WITH FEW-SHOT EXAMPLES
+============================================================================================
+
+You are evaluating claim summaries for quality and accuracy.
+Your task: Decide whether the claim summary is GOOD or BAD.
+
+A GOOD summary:
+- Contains accurate policy information with proper citations
+- Correctly applies exclusions and conditions
+- Avoids hallucinated or invented coverage
+- Cites the correct form/edition when relevant
+- Covers relevant details without contradictions
+
+A BAD summary:
+- Invents coverage not in the policy
+- Misquotes or misapplies exclusions
+- Cites the wrong policy edition or form
+- Contains factual errors about coverage
+- Confuses inclusions with exclusions
+
+[EXAMPLES INSERTED HERE: Two disagreements from V1 evaluation are embedded as few-shot examples]
+
+Example 1 (BAD - misapplied exclusion without clarity):
+Summary: "Water damage is always excluded. The policy does not cover any water loss."
+Verdict: BAD — oversimplifies exclusion; ignores carve-back for sudden accidental discharge
+  in ed-03-24 or endorsement buyback in ed-01-22/02-23.
+
+Example 2 (GOOD - accurate denial with exclusion cite):
+Summary: "Earthquake is excluded under Exclusion E-2 (Earth Movement). The policy does not
+  cover earthquake damage unless a separate earthquake endorsement is attached."
+Verdict: GOOD — correctly cites exclusion code, explains buyback option, avoids invention.
+
+Summary to evaluate:
+{summary}
+
+Respond with only: GOOD or BAD
+
+
+============================================================================================
+KEY DIFFERENCES FROM V1
+============================================================================================
+
+- [+] Includes two concrete examples (examples can be hardcoded or from disagreements)
+- [+] Examples show nuance: distinguishing "crude denial" from "accurate denial with carve-back"
+- [+] Few-shot learning: model learns from examples what constitutes BAD vs GOOD
+- [+] Expected improvement: addressing the exact failure modes that v1 disagreed with human labels
+
+ITERATION STRATEGY:
+- Run v1 on 25 claims
+- Measure agreement with human labels
+- Identify top 2 disagreements
+- Extract actual claim summaries from disagreements
+- Insert them as examples into v2 prompt
+- Re-run v2 on same 25 claims
+- Measure improvement in agreement

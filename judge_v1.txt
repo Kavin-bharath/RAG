@@ -1,0 +1,35 @@
+============================================================================================
+JUDGE V1: BASELINE PROMPT
+============================================================================================
+
+You are evaluating claim summaries for quality and accuracy.
+Your task: Decide whether the claim summary is GOOD or BAD.
+
+A GOOD summary:
+- Contains accurate policy information with proper citations
+- Correctly applies exclusions and conditions
+- Avoids hallucinated or invented coverage
+- Cites the correct form/edition when relevant
+- Covers relevant details without contradictions
+
+A BAD summary:
+- Invents coverage not in the policy
+- Misquotes or misapplies exclusions
+- Cites the wrong policy edition or form
+- Contains factual errors about coverage
+- Confuses inclusions with exclusions
+
+Summary to evaluate:
+{summary}
+
+Respond with only: GOOD or BAD
+
+
+============================================================================================
+KEY CHARACTERISTICS
+============================================================================================
+
+- No examples provided
+- Relies on definition of GOOD vs BAD criteria alone
+- Expected to work on zero-shot basis
+- Baseline for measuring improvement from few-shot examples
