@@ -1,0 +1,207 @@
+{
+  "evaluations": [
+    {
+      "claim_id": "CLM-2026-0001",
+      "mode": "clean",
+      "tool_choice_correct": false,
+      "arguments_valid": false,
+      "efficiency": 1.5,
+      "trajectory_pass": false,
+      "expected_sequence": [
+        "retrieve_claim",
+        "check_policy_exclusions",
+        "compute_payout"
+      ],
+      "actual_sequence": [
+        "retrieve_claim",
+        "retrieve_claim"
+      ]
+    },
+    {
+      "claim_id": "CLM-2026-0002",
+      "mode": "dependency_flood",
+      "tool_choice_correct": false,
+      "arguments_valid": false,
+      "efficiency": 1.0,
+      "trajectory_pass": false,
+      "expected_sequence": [
+        "retrieve_claim",
+        "check_policy_exclusions",
+        "compute_payout"
+      ],
+      "actual_sequence": [
+        "retrieve_claim",
+        "retrieve_claim",
+        "check_policy_exclusions"
+      ]
+    },
+    {
+      "claim_id": "CLM-2026-0003",
+      "mode": "clean",
+      "tool_choice_correct": false,
+      "arguments_valid": false,
+      "efficiency": 1.5,
+      "trajectory_pass": false,
+      "expected_sequence": [
+        "retrieve_claim",
+        "check_policy_exclusions",
+        "compute_payout"
+      ],
+      "actual_sequence": [
+        "retrieve_claim",
+        "check_policy_exclusions"
+      ]
+    },
+    {
+      "claim_id": "CLM-2026-0004",
+      "mode": "dependency_seepage",
+      "tool_choice_correct": false,
+      "arguments_valid": false,
+      "efficiency": 1.5,
+      "trajectory_pass": false,
+      "expected_sequence": [
+        "retrieve_claim",
+        "check_policy_exclusions",
+        "compute_payout"
+      ],
+      "actual_sequence": [
+        "retrieve_claim",
+        "check_policy_exclusions"
+      ]
+    },
+    {
+      "claim_id": "CLM-2026-0005",
+      "mode": "clean",
+      "tool_choice_correct": false,
+      "arguments_valid": false,
+      "efficiency": 1.5,
+      "trajectory_pass": false,
+      "expected_sequence": [
+        "retrieve_claim",
+        "check_policy_exclusions",
+        "compute_payout"
+      ],
+      "actual_sequence": [
+        "retrieve_claim",
+        "check_policy_exclusions"
+      ]
+    },
+    {
+      "claim_id": "CLM-2026-0006",
+      "mode": "dependency_earthquake",
+      "tool_choice_correct": false,
+      "arguments_valid": false,
+      "efficiency": 1.5,
+      "trajectory_pass": false,
+      "expected_sequence": [
+        "retrieve_claim",
+        "check_policy_exclusions",
+        "compute_payout"
+      ],
+      "actual_sequence": [
+        "retrieve_claim",
+        "check_policy_exclusions"
+      ]
+    },
+    {
+      "claim_id": "CLM-2026-0007",
+      "mode": "clean",
+      "tool_choice_correct": false,
+      "arguments_valid": false,
+      "efficiency": 1.5,
+      "trajectory_pass": false,
+      "expected_sequence": [
+        "retrieve_claim",
+        "check_policy_exclusions",
+        "compute_payout"
+      ],
+      "actual_sequence": [
+        "retrieve_claim",
+        "retrieve_claim"
+      ]
+    },
+    {
+      "claim_id": "CLM-2026-0008",
+      "mode": "partial_mold",
+      "tool_choice_correct": false,
+      "arguments_valid": false,
+      "efficiency": 1.5,
+      "trajectory_pass": false,
+      "expected_sequence": [
+        "retrieve_claim",
+        "check_policy_exclusions",
+        "compute_payout"
+      ],
+      "actual_sequence": [
+        "retrieve_claim",
+        "retrieve_claim"
+      ]
+    },
+    {
+      "claim_id": "CLM-2026-0009",
+      "mode": "clean",
+      "tool_choice_correct": false,
+      "arguments_valid": false,
+      "efficiency": 3.0,
+      "trajectory_pass": false,
+      "expected_sequence": [
+        "retrieve_claim",
+        "check_policy_exclusions",
+        "compute_payout"
+      ],
+      "actual_sequence": [
+        "retrieve_claim"
+      ]
+    },
+    {
+      "claim_id": "CLM-2026-0010",
+      "mode": "dependency_sump",
+      "tool_choice_correct": false,
+      "arguments_valid": false,
+      "efficiency": 1.5,
+      "trajectory_pass": false,
+      "expected_sequence": [
+        "retrieve_claim",
+        "check_policy_exclusions",
+        "compute_payout"
+      ],
+      "actual_sequence": [
+        "retrieve_claim",
+        "check_policy_exclusions"
+      ]
+    }
+  ],
+  "metrics": {
+    "tool_choice_accuracy": "0.0%",
+    "argument_validity_rate": "0.0%",
+    "step_efficiency": "1.60",
+    "trajectory_pass_rate": "0.0%"
+  },
+  "outcome_pass_rate": 100.0,
+  "trajectory_pass_rate": 0.0,
+  "gap": 100.0,
+  "failure_modes": {
+    "clean": [
+      "CLM-2026-0001",
+      "CLM-2026-0003",
+      "CLM-2026-0005",
+      "CLM-2026-0007",
+      "CLM-2026-0009"
+    ],
+    "dependency_flood": [
+      "CLM-2026-0002"
+    ],
+    "dependency_seepage": [
+      "CLM-2026-0004"
+    ],
+    "dependency_earthquake": [
+      "CLM-2026-0006"
+    ],
+    "partial_mold": [
+      "CLM-2026-0008"
+    ],
+    "dependency_sump": [
+      "CLM-2026-0010"
+    ]
+  }
+}
