@@ -1,0 +1,37 @@
+--- a/mcp_servers_config.json (before)
++++ b/mcp_servers_config.json (after)
+@@ Add second server @@
+
+{
+  "mcpServers": {
+    "policy-docs": {
+      "command": "python",
+      "args": ["scripts/mcp_policy_server.py"],
+      "env": {}
+    },
++   "claims-system": {
++     "command": "python",
++     "args": ["scripts/mcp_claims_server.py"],
++     "env": {
++       "CLAIMS_DB_URL": "http://claims-api.internal:8080"
++     }
++   }
+  }
+}
+
+SUMMARY:
+  - Added claims-system server to config
+  - No changes to agent code
+  - No changes to policy-docs server config
+  - Agent auto-discovers tools from both servers via tools/list
+
+Changed files:
+  ✓ mcp_servers_config.json (config only)
+
+Unchanged files:
+  ✓ app/agent_week7.py (0 changes)
+  ✓ app/tools_week7.py (0 changes)
+  ✓ scripts/workflow_week7.py (0 changes)
+  ✓ All agent logic (0 changes)
+
+This is purely CONFIG-DRIVEN server addition with ZERO code changes to the agent.
