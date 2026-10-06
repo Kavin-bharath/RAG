@@ -1,0 +1,168 @@
+{
+  "mcp_protocol_exchange": {
+    "description": "Raw JSON-RPC exchange between agent and claims-system MCP server",
+    "timestamp": "2026-10-06T10:30:00Z",
+
+    "step_1_initialize": {
+      "request": {
+        "jsonrpc": "2.0",
+        "id": 1,
+        "method": "initialize",
+        "params": {
+          "protocolVersion": "2024-11-05",
+          "capabilities": {
+            "tools": {}
+          },
+          "clientInfo": {
+            "name": "claims-agent",
+            "version": "1.0.0"
+          }
+        }
+      },
+      "response": {
+        "jsonrpc": "2.0",
+        "id": 1,
+        "result": {
+          "protocolVersion": "2024-11-05",
+          "capabilities": {
+            "tools": {}
+          },
+          "serverInfo": {
+            "name": "claims-system",
+            "version": "1.0.0"
+          }
+        }
+      },
+      "annotations": {
+        "request": {
+          "jsonrpc": "Protocol version identifier (string)",
+          "id": "Request ID for matching responses (integer)",
+          "method": "RPC method being called (string)",
+          "params": "Parameters for the method (object)",
+          "protocolVersion": "MCP protocol version (string)",
+          "capabilities": "Client capabilities (object)",
+          "clientInfo": "Client identification (object)"
+        },
+        "response": {
+          "jsonrpc": "Protocol version (string)",
+          "id": "Matches request ID (integer)",
+          "result": "Response payload (object)",
+          "protocolVersion": "Server protocol version (string)",
+          "capabilities": "Server capabilities (object)",
+          "serverInfo": "Server identification (object with name, version)"
+        }
+      }
+    },
+
+    "step_2_tools_list": {
+      "request": {
+        "jsonrpc": "2.0",
+        "id": 2,
+        "method": "tools/list",
+        "params": {}
+      },
+      "response": {
+        "jsonrpc": "2.0",
+        "id": 2,
+        "result": {
+          "tools": [
+            {
+              "name": "get_claim_status",
+              "description": "Get the current status of a claim (approved, denied, pending)",
+              "inputSchema": {
+                "type": "object",
+                "properties": {
+                  "claim_number": {
+                    "type": "string",
+                    "description": "Claim number, format CLM-YYYY-NNNNN"
+                  }
+                },
+                "required": ["claim_number"]
+              }
+            },
+            {
+              "name": "get_adjuster_notes",
+              "description": "Get the timeline of adjuster notes for a claim",
+              "inputSchema": {
+                "type": "object",
+                "properties": {
+                  "claim_number": {
+                    "type": "string",
+                    "description": "Claim number, format CLM-YYYY-NNNNN"
+                  }
+                },
+                "required": ["claim_number"]
+              }
+            }
+          ]
+        }
+      },
+      "annotations": {
+        "request": {
+          "jsonrpc": "Protocol version (string)",
+          "id": "Request ID (integer)",
+          "method": "RPC method: tools/list (string)",
+          "params": "Empty object - no parameters needed"
+        },
+        "response": {
+          "jsonrpc": "Protocol version (string)",
+          "id": "Matches request ID (integer)",
+          "result": "Response payload (object)",
+          "tools": "Array of available tools discovered from server (array)",
+          "tool.name": "Tool identifier for tools/call (string)",
+          "tool.description": "Human-readable tool description (string)",
+          "tool.inputSchema": "JSON Schema for tool arguments (object)"
+        }
+      }
+    },
+
+    "step_3_tools_call": {
+      "request": {
+        "jsonrpc": "2.0",
+        "id": 3,
+        "method": "tools/call",
+        "params": {
+          "name": "get_claim_status",
+          "arguments": {
+            "claim_number": "CLM-2026-0001"
+          }
+        }
+      },
+      "response": {
+        "jsonrpc": "2.0",
+        "id": 3,
+        "result": {
+          "content": [
+            {
+              "type": "text",
+              "text": "Claim CLM-2026-0001: Status is approved"
+            }
+          ]
+        }
+      },
+      "annotations": {
+        "request": {
+          "jsonrpc": "Protocol version (string)",
+          "id": "Request ID (integer)",
+          "method": "RPC method: tools/call (string)",
+          "params": "Tool invocation parameters (object)",
+          "name": "Tool name from tools/list (string)",
+          "arguments": "Arguments matching tool inputSchema (object)"
+        },
+        "response": {
+          "jsonrpc": "Protocol version (string)",
+          "id": "Matches request ID (integer)",
+          "result": "Tool execution result (object)",
+          "content": "Array of content blocks from tool (array)",
+          "type": "Content type: text, image, document (string)",
+          "text": "Tool output text response (string)"
+        }
+      }
+    },
+
+    "model_call_location": {
+      "where_model_is_called": "Agent's prompt handler receives tools/list response, formats tools for LLM context, and sends user query + available tools to Claude API",
+      "where_model_is_not_called": "initialize, tools/list, and tools/call are all server-side protocol - model never sees raw JSON-RPC. Model sees formatted tool descriptions in its prompt, not MCP protocol format"
+    }
+  }
+}
