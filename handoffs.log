@@ -1,0 +1,6 @@
+# Hand-offs Log
+
+user -> decompose: 291 tokens (context: 293 chars)
+decompose -> coverage_worker: 276 tokens (context: 213 chars)
+decompose -> notes_worker: 269 tokens (context: 168 chars)
+workers -> synthesis: 306 tokens (context: 152 chars)
