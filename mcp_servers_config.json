@@ -1,0 +1,16 @@
+{
+  "mcpServers": {
+    "policy-docs": {
+      "command": "python",
+      "args": ["scripts/mcp_policy_server.py"],
+      "env": {}
+    },
+    "claims-system": {
+      "command": "python",
+      "args": ["scripts/mcp_claims_server.py"],
+      "env": {
+        "CLAIMS_DB_URL": "http://claims-api.internal:8080"
+      }
+    }
+  }
+}
