@@ -1,0 +1,25 @@
+{
+  "before": {
+    "claim_id": "CLM-2026-0018",
+    "query": "Is water damage covered?",
+    "expected_verdict": "FAIL",
+    "actual_verdict": "GOOD",
+    "match": false,
+    "status": "[FAIL]",
+    "reason": "Agent retrieved exclusion doc (E-17) but said 'Water damage is covered' anyway"
+  },
+  "after": {
+    "claim_id": "CLM-2026-0018",
+    "query": "Is water damage covered?",
+    "expected_verdict": "FAIL",
+    "actual_verdict": "FAIL",
+    "match": true,
+    "status": "[PASS]",
+    "reason": "Agent retrieved exclusion doc (E-17), checked it, and correctly said coverage is NOT provided"
+  },
+  "fix_description": "Added exclusion-check to generation prompt",
+  "version_before": "v2.1",
+  "version_after": "v2.2",
+  "pass_rate_before": "0/1 (0%)",
+  "pass_rate_after": "1/1 (100%)"
+}

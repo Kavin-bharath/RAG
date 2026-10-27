@@ -1,0 +1,17 @@
+[
+  {
+    "claim_id": "CLM-2026-0018",
+    "query": "Is water damage covered?",
+    "expected_answer": "Water damage is NOT covered under HO-0304. The policy excludes water backup (E-17).",
+    "expected_verdict": "FAIL",
+    "bug_description": "Agent retrieved exclusion doc (E-17) but said 'Water damage is covered' anyway. This is outcome-verdict mismatch: agent had evidence contradicting its answer but ignored it.",
+    "planted_in_logs": {
+      "timestamp": "2026-10-26T14:45:23Z",
+      "retrieved_docs": ["doc-0304-ex-e17"],
+      "verdict_given": "GOOD",
+      "summary_given": "Water damage is covered"
+    },
+    "root_cause": "Generation prompt did not enforce contradiction-checking: agent received exclusion docs but was not instructed to cross-check against them.",
+    "fix_applied": "Add exclusion-checking step to generation prompt: 'If retrieved docs include exclusions, explicitly check if your answer contradicts them.'"
+  }
+]

@@ -1,0 +1,37 @@
+{
+  "claim_id": "CLM-2026-0018",
+  "timestamp": "2026-10-26T14:45:23Z",
+  "spans": [
+    {
+      "stage": "retrieval",
+      "latency_ms": 134,
+      "tokens": 298,
+      "cost": 2.98e-05,
+      "context_ids": [
+        "doc-0304-ex-e17"
+      ],
+      "prompt_version": "v2.1"
+    },
+    {
+      "stage": "generation",
+      "latency_ms": 2156,
+      "tokens": 1650,
+      "cost": 0.000165,
+      "retrieved_docs": [
+        "doc-0304-ex-e17"
+      ],
+      "prompt_version": "v2.1",
+      "output": "Water damage is covered"
+    },
+    {
+      "stage": "judge",
+      "latency_ms": 892,
+      "tokens": 312,
+      "cost": 3.12e-05,
+      "verdict": "GOOD"
+    }
+  ],
+  "total_latency_ms": 3290,
+  "total_tokens": 2495,
+  "total_cost": 0.0002495
+}
