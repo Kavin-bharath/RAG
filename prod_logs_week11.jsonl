@@ -1,0 +1,12 @@
+{"timestamp": "2026-10-26T14:23:15Z", "claim_id": "CLM-2026-0015", "stage": "retrieval", "context_ids": ["doc-0304-01", "doc-0304-02"], "latency_ms": 145, "tokens": 324, "cost": 0.0000324, "prompt_version": "v2.1"}
+{"timestamp": "2026-10-26T14:23:16Z", "claim_id": "CLM-2026-0015", "stage": "generation", "latency_ms": 2340, "tokens": 1840, "cost": 0.000184, "prompt_version": "v2.1", "retrieved_docs": ["doc-0304-01", "doc-0304-02"]}
+{"timestamp": "2026-10-26T14:23:18Z", "claim_id": "CLM-2026-0015", "stage": "judge", "latency_ms": 856, "tokens": 280, "cost": 0.000028, "verdict": "GOOD", "summary_excerpt": "Water damage is covered under HO-0304"}
+{"timestamp": "2026-10-26T14:45:22Z", "claim_id": "CLM-2026-0018", "stage": "retrieval", "context_ids": ["doc-0304-ex-e17"], "latency_ms": 156, "tokens": 312, "cost": 0.0000312, "prompt_version": "v2.1"}
+{"timestamp": "2026-10-26T14:45:23Z", "claim_id": "CLM-2026-0018", "stage": "generation", "latency_ms": 2156, "tokens": 1650, "cost": 0.000165, "prompt_version": "v2.1", "retrieved_docs": ["doc-0304-ex-e17"]}
+{"timestamp": "2026-10-26T14:45:25Z", "claim_id": "CLM-2026-0018", "stage": "judge", "latency_ms": 892, "tokens": 312, "cost": 0.0000312, "verdict": "GOOD", "summary_excerpt": "Water damage is covered"}
+{"timestamp": "2026-10-26T15:12:44Z", "claim_id": "CLM-2026-0006", "stage": "retrieval", "context_ids": ["doc-0304-01", "doc-0304-02"], "latency_ms": 134, "tokens": 298, "cost": 0.0000298, "prompt_version": "v2.1"}
+{"timestamp": "2026-10-26T15:12:45Z", "claim_id": "CLM-2026-0006", "stage": "generation", "latency_ms": 2289, "tokens": 1903, "cost": 0.0001903, "prompt_version": "v2.1", "retrieved_docs": ["doc-0304-01", "doc-0304-02"]}
+{"timestamp": "2026-10-26T15:12:47Z", "claim_id": "CLM-2026-0006", "stage": "judge", "latency_ms": 867, "tokens": 294, "cost": 0.0000294, "verdict": "GOOD", "summary_excerpt": "Water damage from rainfall is covered under the policy"}
+{"timestamp": "2026-10-26T16:34:12Z", "claim_id": "CLM-2026-0021", "stage": "retrieval", "context_ids": ["doc-0304-ex-e17"], "latency_ms": 142, "tokens": 304, "cost": 0.0000304, "prompt_version": "v2.1"}
+{"timestamp": "2026-10-26T16:34:13Z", "claim_id": "CLM-2026-0021", "stage": "generation", "latency_ms": 2401, "tokens": 1956, "cost": 0.0001956, "prompt_version": "v2.1", "retrieved_docs": ["doc-0304-ex-e17"]}
+{"timestamp": "2026-10-26T16:34:15Z", "claim_id": "CLM-2026-0021", "stage": "judge", "latency_ms": 834, "tokens": 267, "cost": 0.0000267, "verdict": "GOOD", "summary_excerpt": "Water damage is covered"}
